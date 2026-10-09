@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento Web - Semana 05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>Entregável de Desenvolvimento para Web – Semana 05</h1>
+
+    <p>
+        O entregável consiste em três partes: Manipulação e Validação de Dados, Buscador de CEP e Desafio Mini Pokédex
+    </p>
+    <p>
+        Optei por criar um CSS básico para deixar a página visualmente melhor.
+    </p>
+
+<section class="card cep-card">
+    <h2>Buscador de CEP</h2>
+
+    <form id="cep-form">
+        <label for="cep">CEP:</label>
+
+        <input
+            type="text"
+            id="cep"
+            placeholder="Digite o CEP"
+            maxlength="9">
+
+        <button
+            type="submit"
+            id="cep-botao">
+            Buscar CEP
+        </button>
+    </form>
+
+    <p id="cep-status" class="status"></p>
+
+    <dl id="cep-resultado"></dl>
+
+    <h3>Histórico de pesquisas</h3>
+
+<ul id="historico-lista"></ul>
+</section>
+
+<section class="card pokemon-card">
+    <h2>Mini Pokédex</h2>
+
+    <form id="pokemon-form">
+
+        <label for="pokemon">Nome do Pokémon:</label>
+
+        <input
+            type="text"
+            id="pokemon"
+            placeholder="Ex.: Pikachu">
+
+        <button
+            type="submit"
+            id="pokemon-botao">
+            Buscar Pokémon
+        </button>
+
+    </form>
+
+    <p id="pokemon-status" class="status"></p>
+
+    <div id="pokemon-resultado"></div>
+
+</section>
+
+    <script src="app.js"></script>
+</body>
+</html>

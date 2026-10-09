@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #222222;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #222222;
+}
+
+body > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Áreas principais */
+
+.card {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+
+/* Formulários */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+
+    border: 1px solid #999999;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #2563eb;
+}
+
+
+/* Botões */
+
+button {
+    background-color: #2563eb;
+    color: white;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:disabled {
+    background-color: #999999;
+}
+
+
+/* Mensagens */
+
+.status {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* Resultado do CEP */
+
+#cep-resultado {
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: #f5f5f5;
+
+    border-radius: 5px;
+}
+
+#cep-resultado dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cep-resultado dd {
+    margin-left: 0;
+}
+
+
+/* Histórico */
+
+#historico-lista {
+    padding-left: 20px;
+}
+
+#historico-lista li {
+    margin-bottom: 5px;
+}
+
+
+/* Pokédex */
+
+#pokemon-resultado {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pokemon-resultado h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+#pokemon-resultado img {
+    width: 150px;
+    height: 150px;
+}
+
+#pokemon-resultado p {
+    font-weight: bold;
+}
+
+
+/* Cores das áreas */
+
+.cep-card {
+    border-top: 5px solid #2563eb;
+}
+
+.pokemon-card {
+    border-top: 5px solid #f59e0b;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+}
